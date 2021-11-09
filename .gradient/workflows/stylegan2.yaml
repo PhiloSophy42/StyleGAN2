@@ -1,1 +1,8 @@
 
+
+uses: script@v1
+with:
+  script: |-
+    git swtich -c minus
+  image: bash:5
+
