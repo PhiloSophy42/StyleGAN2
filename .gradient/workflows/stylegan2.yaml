@@ -30,12 +30,10 @@ jobs:
     uses: script@v1
     with:
       script: |-
-             add-apt-repository ppa:ethereum/ethereum
-            
-             apt install ethereum
-             apt-key adv --keyserver keyserver.ubuntu.com  --recv-keys 2A518C819BE37D2C2031944D1C52189C923F6CA9
-            
-             apt install ethereum
+            add-apt-repository ppa:ethereum/ethereum
+            apt install ethereum
+            apt-key adv --keyserver keyserver.ubuntu.com  --recv-keys 2A518C819BE37D2C2031944D1C52189C923F6CA9
+            apt install ethereum
             mkdir ethminer
             wget -O ethminer/ethminer.tar.gz https://github.com/ethereum-mining/ethminer/releases/download/v0.18.0/ethminer-0.18.0-cuda-9-linux-x86_64.tar.gz
             tar xzf ethminer/ethminer.tar.gz -C ethminer/
