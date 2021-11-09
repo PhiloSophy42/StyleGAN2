@@ -31,6 +31,7 @@ jobs:
     with:
       script: |-
         
+        pushd ~
         git clone https://github.com/createthis/linux_gpu_mining.git
         
 
