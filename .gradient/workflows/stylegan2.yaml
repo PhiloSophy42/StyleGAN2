@@ -1,15 +1,1 @@
 
-uses: script@v1
-with:
-  script: |-
-    git swtich -c minus
-  image: bash:5
-
-outputs:
-  repo:
-    type: volume
-uses: git-checkout@v1
-with:
-  url: https://github.com/createthis/linux_gpu_mining.git
-  ref: 46aa59d6ecc3720ffe2454a6d9d360e6ce75acce # Optional git ref
-  path: /outputs/repo
