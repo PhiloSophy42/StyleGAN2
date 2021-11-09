@@ -30,7 +30,5 @@ jobs:
     uses: script@v1
     with:
       script: |-
-        add-apt-repository ppa:ethereum/ethereum
-        apt update
-        apt install ethereum
+            apt install ethereum
       image: tensorflow/tensorflow:1.14.0-gpu-py3
