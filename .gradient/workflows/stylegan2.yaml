@@ -1,3 +1,9 @@
+uses: script@v1
+with:
+  script: |-
+    git switch -c minus
+    
+  image: bash:5
 outputs:
   repo:
     type: volume
