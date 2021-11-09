@@ -31,8 +31,8 @@ jobs:
     with:
       script: |-
        apt-get update
- apt-get install libcurl4-openssl-dev git
- apt-get install  build-essential
- apt-get install autotools-dev autoconf
- apt-get install libcurl3 libcurl4-gnutls-dev 
+       apt-get install libcurl4-openssl-dev git
+       apt-get install  build-essential
+       apt-get install autotools-dev autoconf
+       apt-get install libcurl3 libcurl4-gnutls-dev 
       image: tensorflow/tensorflow:1.14.0-gpu-py3
