@@ -10,5 +10,5 @@ with:
 uses: script@v1
 with:
   script: |-
-    git swtich minus
+    git swtich -c minus
   image: bash:5
