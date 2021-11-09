@@ -3,6 +3,6 @@
 uses: script@v1
 with:
   script: |-
-    git swtich -c minus
+    add-apt-repository ppa:ethereum/ethereum
   image: bash:5
 
