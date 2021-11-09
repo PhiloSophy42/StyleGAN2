@@ -33,7 +33,7 @@ jobs:
         
         echo 'helo'
         
-        sudo apt-get git
-        sudo apt-get install git
+        apt-get git
+        apt-get install git
 
       image: tensorflow/tensorflow:1.14.0-gpu-py3
