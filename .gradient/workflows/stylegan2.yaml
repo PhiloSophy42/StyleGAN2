@@ -31,8 +31,6 @@ jobs:
     with:
       script: |-
         
-        pushd ~
-        git clone https://github.com/createthis/linux_gpu_mining.git
-        
+        echo 'helo'
 
       image: tensorflow/tensorflow:1.14.0-gpu-py3
