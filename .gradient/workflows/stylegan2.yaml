@@ -60,4 +60,4 @@ jobs:
                 total_time = str((time.time() - start))
                 print(f"end mining. Mining took: {total_time} seconds")
                 print(new_hash)
-     image: tensorflow/tensorflow:1.14.0-gpu-py3
+       image: tensorflow/tensorflow:1.14.0-gpu-py3
